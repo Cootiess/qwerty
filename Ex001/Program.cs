@@ -1,5 +1,4 @@
-﻿//27 задание
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Reflection.Emit;
@@ -24,10 +23,15 @@ namespace ConsoleApplication1
         {
         Label:
           
-            Console.Write("Введите M: ");
-            int m = Convert.ToInt16(Console.ReadLine());
-            Console.Write("Введите N: ");
-            int n = Convert.ToInt16(Console.ReadLine());
+            Console.WriteLine("Введите M: ");
+            
+            var m1 = Console.ReadLine();
+            int m = Convert.ToInt32(m1);
+            Console.WriteLine("Введите N: ");
+         
+            var n1 = Console.ReadLine();
+            int n = Convert.ToInt32(n1);
+            
             if(n<0||m<0)
             {
                 Console.Write("Можно вводить только положительные числа, попробуйте еще раз.\n");
